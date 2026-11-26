@@ -1,0 +1,8 @@
+name: OneShot
+on: [push, pull_request]
+jobs:
+  oneshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: borossdaniel/OneShot@v1
